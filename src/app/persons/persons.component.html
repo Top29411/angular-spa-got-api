@@ -1,0 +1,27 @@
+<!-- persons.component.html -->
+<div class="container mx-auto p-6 bg-gray-100 rounded-lg shadow-md">
+  <mat-form-field class="w-full mb-6" appearance="fill">
+    <mat-label>Search Persons</mat-label>
+    <input matInput [formControl]="searchControl" class="w-full bg-white border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-blue-500 transition duration-300">
+
+    <button *ngIf="searchControl" matSuffix mat-icon-button aria-label="Clear" (click)="removeSearchValue()" class="ml-2">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+
+  <div *ngIf="loading" class="text-center text-gray-600 mb-4">
+    Loading...
+  </div>
+
+  <ul *ngIf="!loading">
+    <li *ngFor="let person of filteredPersons; let i = index" (click)="showPersonDetail(person.slug)" class="mb-2 p-4 bg-white shadow-md rounded-md cursor-pointer transition duration-300 hover:bg-gray-200">
+      <div class="flex items-baseline text-[20px]">
+        <span class="mr-4 text-gray-600">{{ i + 1 }}.</span>
+        <div >
+          <p class="text-[20px] font-semibold mb-1">{{ person.name }}</p>
+          <p class="text-gray-600 text-[15px]">Slug: {{ person.slug }}</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,126 @@
+.mat-tab-body-wrapper {
+  transition: none !important;
+}
+
+section {
+  display: table;
+}
+
+.example-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+}
+
+.example-button-row {
+  display: table-cell;
+  width: 490px;
+}
+
+.example-button-row .mat-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+
+
+.houses-container {
+  display: flex;
+  justify-content: center;
+}
+
+.houses-card {
+  width: 400px;
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.house-list {
+  padding: 0;
+}
+
+.house-item {
+  padding: 10px;
+}
+
+.house-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.house-link:hover {
+  text-decoration: underline;
+}
+
+.house-detail-container {
+  display: flex;
+  justify-content: center;
+}
+
+.house-detail-card {
+  width: 400px;
+  margin-top: 20px;
+}
+
+.member-list {
+  padding: 0;
+}
+
+.member-item {
+  padding: 10px;
+}
+
+.member-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.member-link:hover {
+  text-decoration: underline;
+}
+.mat-toolbar {
+  height: 64px;
+}
+
+.app-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 16px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.search-field {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  padding: 8px;
+}
+
+.search-button {
+  margin-left: 8px;
+}

@@ -1,0 +1,13 @@
+/* persons.component.css */
+/* No need for these styles as Tailwind CSS classes are used directly in the HTML */
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .mat-list-item {
+    padding: 10px;
+  }
+}

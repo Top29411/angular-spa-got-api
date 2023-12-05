@@ -1,0 +1,17 @@
+/* elegant-list.component.css */
+.elegant-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.elegant-list-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.elegant-list-item:last-child {
+  border-bottom: none;
+}
